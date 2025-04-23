@@ -41,9 +41,7 @@ CREATE TABLE `candidate_details` (
 -- Dumping data for table `candidate_details`
 --
 
-INSERT INTO `candidate_details` (`id`, `election_id`, `candidate_name`, `candidate_details`, `candidate_photo`, `inserted_by`, `inserted_on`) VALUES
-(2, 2, 'Ali', 'abc', '../assets/images/candidate_photos/43944385300_31936791168web icons-06.png', 'Shoaib', '2022-10-29'),
-(3, 2, 'Shoaib', 'xyz', '../assets/images/candidate_photos/54153203372_20775697032web icons-07.png', 'Shoaib', '2022-10-29');
+
 
 -- --------------------------------------------------------
 
@@ -66,8 +64,6 @@ CREATE TABLE `elections` (
 -- Dumping data for table `elections`
 --
 
-INSERT INTO `elections` (`id`, `election_topic`, `no_of_candidates`, `starting_date`, `ending_date`, `status`, `inserted_by`, `inserted_on`) VALUES
-(2, 'Class Monitor', 2, '2022-10-29', '2022-10-31', 'Expired', 'Shoaib', '2022-10-29');
 
 -- --------------------------------------------------------
 
@@ -87,11 +83,6 @@ CREATE TABLE `users` (
 -- Dumping data for table `users`
 --
 
-INSERT INTO `users` (`id`, `username`, `contact_no`, `password`, `user_role`) VALUES
-(2, 'Shoaib', '0333', 'a9993e364706816aba3e25717850c26c9cd0d89d', 'Admin'),
-(3, 'Test', '123', 'a9993e364706816aba3e25717850c26c9cd0d89d', 'Voter'),
-(4, 'Test1', '111', 'a9993e364706816aba3e25717850c26c9cd0d89d', 'Voter'),
-(5, 'Test 2', '222', 'a9993e364706816aba3e25717850c26c9cd0d89d', 'Voter');
 
 -- --------------------------------------------------------
 
@@ -112,10 +103,6 @@ CREATE TABLE `votings` (
 -- Dumping data for table `votings`
 --
 
-INSERT INTO `votings` (`id`, `election_id`, `voters_id`, `candidate_id`, `vote_date`, `vote_time`) VALUES
-(2, 2, 3, 2, '2022-11-01', '09:47:46'),
-(3, 2, 4, 2, '2022-11-01', '09:53:38'),
-(4, 2, 5, 3, '2022-11-01', '09:54:05');
 
 --
 -- Indexes for dumped tables
